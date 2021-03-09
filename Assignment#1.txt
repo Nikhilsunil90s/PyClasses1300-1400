@@ -1,0 +1,43 @@
+1. Write a Python program to get a string made of the first 2 and the last 2 chars from a given a string. 
+     If the string length is less than 2, return instead of the empty string.
+	Sample String : 'webcom'
+	Expected Result : 'weom'
+	Sample String : 'wo'
+	Expected Result : 'wowo'
+	Sample String : ' w'
+	Expected Result : Empty String 
+
+2. Write a Python program to get a string from a given string - 
+     -where all occurrences of its first char have been changed to '$', except the first char itself. 
+	Sample String : 'restart'
+	Expected Result : 'resta$t'
+
+3. Write a Python function that takes a list of words and returns the length of the longest one.
+
+4. Write a Python program that accepts a comma separated sequence of words as input - 
+     - and prints the unique words in sorted form (alphanumerically).
+	Sample Words : red, white, black, red, green, black
+	Expected Result : black, green, red, white
+5. Write a Python program to shuffle and print a given list.
+
+6. Write a Python program to select an item randomly from a list.
+
+7. Write a Python program to find the second largest number in a list.
+
+8. Write a Python program to convert a list of multiple integers into a single integer. 
+	Sample list: [11, 33, 50]
+	Expected Output: 113350
+
+9.  Write a Python program to find the list in a list of lists whose sum of elements is the highest. 
+	Sample lists: [1,2,3], [4,5,6], [10,11,12], [7,8,9]
+	Expected Output: [10, 11, 12]
+
+10. Write a Python program to count repeated characters in a string.
+	Sample string: 'thequickbrownfoxjumpsoverthelazydog'
+ 	Expected output :
+	o 4
+	e 3
+	u 2
+	h 2
+	r 2
+	t 2
