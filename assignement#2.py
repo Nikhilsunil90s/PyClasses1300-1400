@@ -3,12 +3,30 @@
 
 
 2. Write a Python program to convert two tuples to a dictionary.
+'''
+#2. 
+t1 = (1,2,3,4,5)
+t2 = ('apple' , 'green' , 'orange' , 'blue' , 'red')
+d = {}
+for i in range(len(t1)):
+    d.setdefault(t1[i] , t2[i])
+print(d)
+print(dict(zip(t1,t2))) # dono same length k hone chahiye
 
-
+'''
 3.  Write a Python program to replace last value of tuples in a list.
     Sample list: [(10, 20, 40), (40, 50, 60), (70, 80, 90 , 50)]
     Expected Output: [(10, 20, 100), (40, 50, 100), (70, 80, 100)]
-
+'''
+# 
+sl = [(10, 20, 40), (40, 50, 60), (70, 80, 90 , 50)]
+eol = []
+for i in sl:
+    li = list(i)
+    li[-1] = 100
+    eol.append(tuple(li))
+print(eol)
+'''
 4. Question:
     Write a program that calculates and prints the value according to the given formula:
     Q = Square root of [(2 * C * D)/H]
