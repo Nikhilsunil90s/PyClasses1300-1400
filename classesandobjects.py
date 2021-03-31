@@ -53,24 +53,42 @@
 #         pass
 
 class Person:
-    name  = 'Max' # by default, everything is public as well as static ----- Class Variables
+    '''This is doc string for class, this is optional!'''
+    __name  = 'Max' # by default, everything is public as well as static ----- Class Variables
     age = 29
     gender = 'Male'
+    def __init__(self , x,y):# constructor name is fixed ---- __init__
+        self.__attr1 = x # ObjectVariables
+        self.__attr2 = y
+
     def showPerson(self): # which invokes this function
-        print(self.name, self.age, self.gender)
+        print(self.__attr1, self.__attr2)
     
     def readperson(self):
         pass
 
-print(Person.name)
+    def __del__(self):
+        print("Person Destroyed!")
+
+#print(Person.__name)
 Person.age = 90
 
 
-P1 = Person() # invokes default constructor (a special function that creates an object and its attributes)
-P2 = Person()
+P1 = Person(90,20) # invokes default constructor (a special function that creates an object and its attributes)
+P2 = Person(-90,-80)
 # print(P1.name, P2.name)
-#P1.showPerson()
-#P2.showPerson()
+P1.showPerson()
+P2.showPerson()
 #P1.readperson()
-print(P1.age, P2.age)
-print(P1.name, P2.name)
+#print(P1.age, P2.age)
+#print(P1.name, P2.name)
+
+#print(P1.attr1 , P2.attr1)
+#P1.attr1 = 'new value'
+#print(P1.attr1 , P2.attr1)
+print(Person.__doc__)
+
+# Desctructors
+#del P1
+
+print(P2._Person__attr2)
